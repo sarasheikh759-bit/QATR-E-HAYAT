@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Palette requested by user */
+    --pastel-red: #EFA0A7;
+    --deep-pastel-red: #D96C78;
+    --sea-blue: #77C8D0;
+    --deep-sea-blue: #247E8A;
+    --bg-main: #F7FAFC;
+    --card-white: #FFFFFF;
+    --text-main: #263746;
+
+    /* Semantic accents */
+    --brand-crimson: #D96C78;
+    --brand-crimson-dark: #B94C58;
+    --brand-crimson-light: #FDE8EA;
+    --brand-navy: #247E8A;
+    --brand-navy-light: #3A9BA7;
+
+    --status-success: #1B8755;
+    --status-success-bg: #E8F5E9;
+    --status-warning: #B45309;
+    --status-warning-bg: #FEF3C7;
+    --status-error: #C62828;
+    --status-error-bg: #FFEBEE;
+  }
+
+  body {
+    background-color: #F7FAFC;
+    color: #263746;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  /* Perso-Arabic Regional Languages Typography */
+  html[lang="ur"] body,
+  html[lang="pa"] body,
+  html[lang="skr"] body,
+  html[lang="hnd"] body,
+  html[lang="ks"] body {
+    font-family: 'Noto Nastaliq Urdu', 'Noto Naskh Arabic', system-ui, serif;
+    line-height: 1.85;
+  }
+
+  html[lang="sd"] body,
+  html[lang="ps"] body,
+  html[lang="bal"] body,
+  html[lang="brh"] body,
+  html[lang="scl"] body,
+  html[lang="bft"] body,
+  html[lang="khw"] body,
+  html[lang="wbl"] body {
+    font-family: 'Noto Naskh Arabic', 'Noto Nastaliq Urdu', system-ui, serif;
+    line-height: 1.8;
+  }
+
+  /* Accessible focus indicators */
+  *:focus-visible {
+    outline: 2px solid #247E8A;
+    outline-offset: 2px;
+  }
+}
+
+/* RTL layout adjustments */
+[dir="rtl"] .rtl-flip {
+  transform: scaleX(-1);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+

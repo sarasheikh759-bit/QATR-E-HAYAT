@@ -1,0 +1,6 @@
+{
+  "name": "لہو کا ہر قطرہ کسی کی حیات بن جائے",
+  "description": "لہو کا ہر قطرہ کسی کی حیات بن جائے — A drop of blood can become someone's lifeline. Donate Blood, Save Lives across Pakistan in regional languages with offline PWA support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

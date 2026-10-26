@@ -1,0 +1,56 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="100" fill="#F7FAFC"/>
+  <!-- Sea Blue halo ring -->
+  <circle cx="256" cy="270" r="190" fill="#77C8D0" fill-opacity="0.2"/>
+  <circle cx="256" cy="270" r="160" fill="#77C8D0" fill-opacity="0.3"/>
+  
+  <defs>
+    <linearGradient id="bloodGrad" x1="256" y1="90" x2="256" y2="430" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EFA0A7" />
+      <stop offset="60%" stop-color="#D96C78" />
+      <stop offset="100%" stop-color="#C62828" />
+    </linearGradient>
+    <linearGradient id="seaGrad" x1="140" y1="280" x2="370" y2="390" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#77C8D0" />
+      <stop offset="100%" stop-color="#247E8A" />
+    </linearGradient>
+  </defs>
+
+  <!-- Blood droplet silhouette -->
+  <path
+    d="M256 90C256 90 146 220 146 320C146 385 195 430 256 430C317 430 366 385 366 320C366 220 256 90 256 90Z"
+    fill="url(#bloodGrad)"
+    filter="drop-shadow(0 8px 16px rgba(36,126,138,0.25))"
+  />
+
+  <!-- Gloss reflection -->
+  <path
+    d="M220 170C220 170 180 240 180 290C180 310 190 330 205 340"
+    stroke="#FFFFFF"
+    stroke-width="16"
+    stroke-linecap="round"
+    opacity="0.55"
+  />
+
+  <!-- Bridge suspension arch in white/sea blue -->
+  <path
+    d="M190 350C210 300 302 300 322 350"
+    stroke="#FFFFFF"
+    stroke-width="16"
+    stroke-linecap="round"
+  />
+  <!-- Bridge deck line -->
+  <path
+    d="M175 355H337"
+    stroke="#FFFFFF"
+    stroke-width="14"
+    stroke-linecap="round"
+  />
+  <!-- Central connection pulse node -->
+  <circle cx="256" cy="285" r="18" fill="#FFFFFF" />
+  <circle cx="256" cy="285" r="10" fill="#247E8A" />
+  
+  <!-- Bridge support pillars -->
+  <path d="M225 320V355" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" />
+  <path d="M287 320V355" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round" />
+</svg>
